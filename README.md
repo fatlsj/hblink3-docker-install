@@ -44,7 +44,7 @@ sudo su
 2. It is very important that the installer runs from the /opt directory! We will then want to get this repository and git clone it to the /opt directory.
 ```sh
 cd /opt
-git clone https://github.com/ShaYmez/hblink3-docker-install
+git clone https://github.com/fatlsj/hblink3-docker-install
 ```
 3. Now enter in to the cloned repo and execute the install script. No need to chmod as permissions are already satisfied.
 ```sh
