@@ -439,7 +439,7 @@ REPEAT: True
 MAX_PEERS: 10
 EXPORT_AMBE: False
 IP:
-PORT: 54000
+PORT: 62030
 PASSPHRASE: passw0rd
 GROUP_HANGTIME: 5
 USE_ACL: True
@@ -591,9 +591,12 @@ configuration file.
 '''
 
 BRIDGES = {
+    'HBLink-Peer-TG9': [
+            {'SYSTEM': 'MASTER-1',   'TS': 1, 'TGID': 9, 'ACTIVE': True,  'TIMEOUT': 2, 'TO_TYPE':'NONE',  'ON': [9],       'OFF': [],    'RESET': []},
+        ],
     '9999 Parrot': [
             {'SYSTEM': 'MASTER-1',   'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 0, 'TO_TYPE': 'NONE',  'ON': [9999],  'OFF': [], 'RESET': []},
-#            {'SYSTEM': 'Parrot',     'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 0, 'TO_TYPE': 'NONE',  'ON': [],      'OFF': [], 'RESET': []},
+            {'SYSTEM': 'Parrot',     'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 0, 'TO_TYPE': 'NONE',  'ON': [9999], 'OFF': [], 'RESET': []},
         ],
     'FREESTAR': [
             {'SYSTEM': 'MASTER-1',    'TS': 1, 'TGID': 325,    'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'ON',  'ON': [2,], 'OFF': [9,10], 'RESET': []},
